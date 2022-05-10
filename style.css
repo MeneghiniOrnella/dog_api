@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Koulen&family=Raleway:wght@500&display=swap');
+
+body{
+    text-align: center;
+    font-family: 'Koulen', cursive;
+    font-family: 'Raleway', sans-serif;
+    background-color: rgb(249, 252, 252);
+    color: rgb(14, 14, 14);
+}
+
+img{
+    width: 30em;
+    height: 30em;
+    object-fit: cover;
+    image-rendering: auto;
+    /*border-radius: 0.3em;*/
+    box-shadow: 4px 5px 5px 0px rgba(34, 34, 34, 0.75);
+    -webkit-box-shadow: 4px 5px 5px 0px rgba(34, 34, 34, 0.75);
+    -moz-box-shadow: 4px 5px 5px 0px rgba(34, 34, 34, 0.75);
+}
+a{
+    font-size: 1.3em;
+    color: rgb(160, 0, 48);
+    text-decoration: none;
+}
+a:hover, a:active{
+    color: rgb(0, 0, 0);
+}
+.api{
+    font-size: 1em;
+    color: black;
+}
+
+.loader{
+    position: fixed;
+    z-index: 99;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color:rgb(28, 87, 165);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.loader.hidden{
+    animation: fadeOut 1s;
+    animation-fill-mode: forwards;
+}
+@keyframes fadeOut {
+    100%{
+        opacity: 0;
+        visibility: hidden;
+    }
+}
